@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://bootswatch.com/5/quartz/bootstrap.min.css">
+    <title>Basic Calculator</title>
+</head>
+<body>
+    <div class="container" style="width:fit-content;">
+    <div class="card border-secondary mb-3 mt-3 align-items-center" style="max-width: 20rem;" style="max-width: 100%;">
+        <h5 class="card-header">Calculator</h5>
+        <div class="card-body">
+          <div class="card-content" id="result">
+              <form action="" name= "calc">
+            <input class="form-control text-end" name ="result" type="text" placeholder="" disabled="">
+        </form>
+              <div class="card-group" id="btnGroup">
+              <button type="button" class="btn btn-outline-light" onclick="getResult(this.id)" id="7">7</button>
+              <button type="button" class="btn btn-outline-light" onclick="getResult(this.id)" id="8">8</button>
+              <button type="button" class="btn btn-outline-light" onclick="getResult(this.id)" id="9">9</button>
+              <button type="button" class="btn btn-outline-light" onclick="getResult(this.id)" id="+">+</button>
+              <button type="button" class="btn btn-outline-light" onclick="getResult(this.id)" id="4">4</button>
+              <button type="button" class="btn btn-outline-light" onclick="getResult(this.id)" id="5">5</button>
+              <button type="button" class="btn btn-outline-light" onclick="getResult(this.id)" id="6">6</button>
+              <button type="button" class="btn btn-outline-light" onclick="getResult(this.id)" id="-">-</button>
+              <button type="button" class="btn btn-outline-light" onclick="getResult(this.id)" id="1">1</button>
+              <button type="button" class="btn btn-outline-light" onclick="getResult(this.id)" id="2">2</button>
+              <button type="button" class="btn btn-outline-light" onclick="getResult(this.id)" id="3">3</button>
+              <button type="button" class="btn btn-outline-light" onclick="getResult(this.id)" id="*">*</button>
+              <button type="button" class="btn btn-outline-light" onclick="getResult(this.id)" id="0">0</button>
+              <button type="button" class="btn btn-outline-light" onclick="getResult(this.id)" id=".">.</button>
+              <button type="button" class="btn btn-outline-light" onclick="getResult(this.id)" id="/">÷</button>
+              <button type="button" class="btn btn-outline-light" onclick="clearScreen()" id="clear">C</button>
+              <button type="button" class="btn btn-outline-light" onclick="calculate()" id="equals">=</button>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
